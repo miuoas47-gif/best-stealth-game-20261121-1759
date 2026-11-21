@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shadowline — a stealth game</title>
+<link rel="icon" href="data:,">
+<style>
+  html, body { margin: 0; padding: 0; background: #0b0d12; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; font-family: Georgia, 'Times New Roman', serif; }
+  #wrap { width: min(96vw, 1080px); }
+  canvas { display: block; width: 100%; height: auto; background: #14161d; border: 1px solid #2a2f3d; box-shadow: 0 0 60px #000; }
+  #hint { color: #8b93a7; font-size: 13px; text-align: center; margin-top: 10px; font-family: system-ui, sans-serif; }
+  #hint b { color: #d8dce6; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1080" height="675"></canvas>
+  <div id="hint"><b>WASD / arrows</b> move &nbsp;·&nbsp; <b>Shift</b> sneak &nbsp;·&nbsp; steal the <b>Moonstone Idol</b>, then slip out the exit unseen &nbsp;·&nbsp; shadows hide you, running makes noise</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
